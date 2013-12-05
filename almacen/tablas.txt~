@@ -1,0 +1,90 @@
+Create Database dbAlmacen;
+
+Create Table Tipo_pantalon(
+	Tip_codi_pant Int(2) Primary Key Not Null,
+	 Tiptipo_pantalon Varchar(10) Not Null);
+
+Create Table Tipo_persona(
+	tip_perso Int(1) Primary Key Not Null,
+        tipo_persona Varchar(10) Not Null);
+
+Create Table Pantalon(
+	 PantCodigo Varchar(10) Primary Key Not Null,
+	 PantColor Varchar(10) Not Null,
+	 PantTalla Varchar(2) Not Null,
+	 PantSexo Varchar(1)Not Null,
+	 PantTipo_pant Int(2) Not Null foreign key References Tipo_pantalon(TipCodi_pant),
+	 PantItem Int(10) Not Null,
+	 Tipo_persona Int(1) Not Null Foreign key References Tipo_persona(Tip_perso),
+	 Camvalor Int(10) Not Null,
+         PantNit_provedor Int(10)Not Null);
+
+Create Table Tipo_camisa(
+	 TipCodi_camis Int(2) Not Null Primary Key,
+	tipo_pant Varchar(10) Not Null);
+
+create Table Camisa(
+	 CamCodigo Varchar(10) Not Null Primary Key,
+	 CamColor Varchar(10) Not Null,
+	 CamTalla Varchar(2) Not Null,
+	 CamSexo Varchar(1) Not Null,
+	 CamTipo_pant Int(2) Not Null foreign key References Tipo_Camisa(TipCodi_camis),
+	 CamItem Int(10) Not Null,
+	 Tipo_persona Int(1) Not Null Foreign key References Tipo_persona(Tip_perso),
+	 Camvalor Int(10) Not Null, 
+         CamNit_provedor Int(10) Not Null);
+Create Table Tipo_Ropa_interior(
+	 RopaCod_pant Int(2) Not Null Primary Key,
+	 ropa_interior Varchar(10) Not Null);
+
+create Table Ropa_interior(
+	 RopCodigo Varchar(10) Not Null Primary Key,
+	 RopColor Varchar(10) Not Null,
+	RopTalla Varchar(2) Not Null,
+	 RopSexo Varchar(1) Not Null,
+	 RopTipo_pant Int(2) Not Null foreign key References Tipo_Ropa_interior(RopaCod_pant), 
+	 RopItem Int(10) Not Null,
+	 Tipo_persona Int(1) Not Null Foreign key References tipo_persona(Tip_perso),
+	 Ropvalor Int(10) Not Null, 
+         RopNit_provedor Int(10) Not Null);
+
+Create Table Tipo_calzado(
+	TipCod_cal Int(1) Not Null Primary Key,
+	Tipo_calzado Varchar(10)Not Null);
+
+create Table Calzado(
+	 CalCodigo Varchar(10) Primary Key Not Null,
+	 CalColor Varchar(10) Not Null,
+	 CalTalla Varchar(2) Not Null,
+	 CalSexo Varchar(1) Not Null,
+	 CalTipo_pant Int(2) Not Null foreign key References Tipo_calzado(TipCodcal), 
+	 CalItem Int(10) Not Null,
+	 Tipo_persona Int(1) Not Null Foreign key References tipo_persona(Tip_perso),
+	 Calvalor Int(10) Not Null, 
+         CalNit_provedor Int(10) Not Null);
+
+Create Table Juguetes(
+     JugCodigo  Varchar(10) Not Null Primary Key,
+     Jugvalor Int(5)  Not Null,
+      JugTipo_niño Varchar(4) Not Null,
+      Jug_marca Varchar(10) Not Null,
+      JugNit_prov Int(10) Not Null);
+
+Create Table Factura(
+	Fact_cod Int AutoIncrement ZeroFill Not Null Primary Key,
+	FacCedula Int(10) Not Null,
+	 fecha_venta Date Not Null,
+	Fact_Total Int(10) Not Null);
+
+Create table Item(
+	 Enum Int AutoIncrement Not Null Primary Key,
+	Fact_cod Varchar(10) Not Null,
+	 tipo_producto Varchar(10) Not Null,
+	 nomb_prod Varchar(10) Not Null,
+	 Cantidad int(2) Not Null,
+	 costo int(6) Not Null,
+	 total int(7) Not Null);
+	 
+	
+
+

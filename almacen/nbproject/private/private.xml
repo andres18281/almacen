@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/ubuntu/NetBeansProjects/almacen/src/almacen/Almacen.java</file>
+            <file>file:/home/ubuntu/NetBeansProjects/almacen/src/almacen/Controlador/Consultar_datos.java</file>
+            <file>file:/home/ubuntu/NetBeansProjects/almacen/src/almacen/vista/agregar_ropa_interior.java</file>
+            <file>file:/home/ubuntu/NetBeansProjects/almacen/src/almacen/modelo/facturacion/facturacion.java</file>
+            <file>file:/home/ubuntu/NetBeansProjects/almacen/src/almacen/modelo/calzado/calzado.java</file>
+            <file>file:/home/ubuntu/NetBeansProjects/almacen/src/almacen/vista/Busqueda_.java</file>
+            <file>file:/home/ubuntu/NetBeansProjects/almacen/src/almacen/modelo/ropa_interior/ropa_interior.java</file>
+            <file>file:/home/ubuntu/NetBeansProjects/almacen/src/almacen/modelo/pantalon/pantalon.java</file>
+            <file>file:/home/ubuntu/NetBeansProjects/almacen/src/almacen/vista/principal.java</file>
+            <file>file:/home/ubuntu/NetBeansProjects/almacen/src/almacen/Controlador/Registra_datos_.java</file>
+            <file>file:/home/ubuntu/NetBeansProjects/almacen/src/almacen/vista/Factura.java</file>
+            <file>file:/home/ubuntu/NetBeansProjects/almacen/src/almacen/vista/agregar_jugueteria.java</file>
+            <file>file:/home/ubuntu/NetBeansProjects/almacen/src/almacen/vista/agregar_camisa.java</file>
+            <file>file:/home/ubuntu/NetBeansProjects/almacen/src/almacen/modelo/camisa/camisa.java</file>
+            <file>file:/home/ubuntu/NetBeansProjects/almacen/src/almacen/modelo/juguetes/juguetes.java</file>
+            <file>file:/home/ubuntu/NetBeansProjects/almacen/src/almacen/vista/agregar_zapato.java</file>
+        </group>
+    </open-files>
+</project-private>
